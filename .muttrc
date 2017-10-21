@@ -1,0 +1,13 @@
+set imap_user = 'crhamiltonj@gmail.com'
+
+set folder = imaps://imap.gmail.com
+set spoolfile = +INBOX
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+
+set smtp_url = 'smtps://yourusername@smtp.gmail.com'
+set record=""
+
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+
+set trash="imaps://imap.gmail.com/[Gmail]/Trash"
