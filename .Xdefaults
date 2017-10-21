@@ -1,0 +1,75 @@
+/* !################ */
+/* # Xft Settings # */
+/* ################ */
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.rgba:	rgb
+Xft.hinting:	true
+Xft.hintstyle:	hintslight
+
+/* ################# */
+/* # URXVT Settings# */
+/* ################# */
+
+URxvt.depth: 32
+URxvt.geometry:	90x30
+URxvt.loginShell: true
+URxvt.internalBorder: 3
+URxvt.lineSpace: 0
+
+/* # transparancy true or false(default) */
+/* # URxvt*transparent: true */
+
+/* # scrollbar - true (default) or false */
+URxvt*scrollBar: true
+
+/* # scrollbar position - left=false (default) or right=true */
+URxvt*scrollBar_right: false
+
+/* # scrollbar style - rxvt (default), plain, next, or xterm */
+URxvt*scrollstyle: plain
+
+urxvt*font: xft:Inconsolata:pixelsize=13,xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt*boldFont: xft:Inconsolata:pixelsize=13,xft:Inconsolata\ for\ Powerline:pixelsize=14
+
+! vim: set filetype=xdefaults :
+! gjm scheme
+! ! *background: rgba:0000/0000/0000/dddd
+!
+*cursorColor:   #cee318
+
+*background:    #1C1C1C
+*foreground:    #c5c5c5
+
+! black
+*color0:        #1C1C1C
+*color8:        #666666
+
+! red
+*color1:        #ff005b
+*color9:        #ff00a0
+
+! green
+*color2:        #cee318
+*color10:       #ccff00
+
+! yellow
+*color3:        #ffe755
+*color11:       #ff9f00
+
+! blue
+*color4:        #048ac7
+*color12:       #48c6ff
+
+! magenta
+*color5:        #833c9f
+*color13:       #be67e1
+
+! cyan 
+*color6:        #0ac1cd
+*color14:       #63e7f0
+
+! white
+*color7:        #e5e5e5
+*color15:       #f3f3f3
+
