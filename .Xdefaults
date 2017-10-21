@@ -29,8 +29,8 @@ URxvt*scrollBar_right: false
 /* # scrollbar style - rxvt (default), plain, next, or xterm */
 URxvt*scrollstyle: plain
 
-urxvt*font: xft:Inconsolata:pixelsize=13,xft:Inconsolata\ for\ Powerline:pixelsize=14
-urxvt*boldFont: xft:Inconsolata:pixelsize=13,xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt*font: xft:Inconsolata:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
+urxvt*boldFont: xft:Inconsolata:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
 
 ! vim: set filetype=xdefaults :
 ! gjm scheme
@@ -38,7 +38,7 @@ urxvt*boldFont: xft:Inconsolata:pixelsize=13,xft:Inconsolata\ for\ Powerline:pix
 !
 *cursorColor:   #cee318
 
-*background:    #1C1C1C
+*background:    #030303
 *foreground:    #c5c5c5
 
 ! black
