@@ -19,7 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'sirver/ultisnips'
@@ -35,24 +35,28 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
-" Plug 'ayu-theme/ayu-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'Dru89/vim-adventurous'
 Plug 'abra/vim-obsidian' 
 Plug 'altercation/vim-colors-solarized'
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
+Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
+Plug 'vim-scripts/wc.vim--jcline'
+Plug 'vim-latex/vim-latex'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Airline config variables
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 " let g:airline_theme='jellybeans'
 " let g:airline_solarized_bg='dark'
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -76,6 +80,9 @@ ino <left> <NOP>
 ino <right> <NOP>
 ino <up> <NOP>
 
+" use W to write to a priviledged file
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
 " Make jk work like <Esc>
 inoremap jj <Esc>
 
@@ -90,7 +97,6 @@ nmap <leader>bl :ls<cr>
 " Show the line range except for current line number
 set number relativenumber
 
-let ayucolor="ayu"
 
 set bg=dark
 colorscheme adventurous
