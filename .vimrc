@@ -1,3 +1,9 @@
+" download vim-plug if missing
+if empty(glob("~/.vim/autoload/plug.vim"))
+  silent! execute '!curl -fsSLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter *  silent PlugInstall
+endif
+
 " Automatic reloading of .vimrc on save
 autocmd! bufwritepost .vimrc source %
 
@@ -14,38 +20,40 @@ set t_Co=256
 filetype plugin indent on
 
 " Plug plugin manager definition
-call plug#begin('~/.vim/plugged')
+silent! if plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-dispatch'
-" Plug 'scrooloose/syntastic'
-Plug 'scrooloose/nerdtree'
-Plug 'Valloric/YouCompleteMe'
-Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'mattn/emmet-vim'
-Plug 'python-mode/python-mode'
-Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
-Plug 'elzr/vim-json'
-Plug 'stanangeloff/php.vim'
-Plug 'vim-scripts/bash-support.vim'
-Plug 'chrisbra/Colorizer'
-Plug 'airblade/vim-gitgutter'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'Yggdroot/indentLine'
-Plug 'mhinz/vim-startify'
-Plug 'ayu-theme/ayu-vim'
-Plug 'Dru89/vim-adventurous'
-Plug 'abra/vim-obsidian' 
-Plug 'altercation/vim-colors-solarized'
-Plug 'w0rp/ale'
-Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
-Plug 'vim-scripts/wc.vim--jcline'
-Plug 'vim-latex/vim-latex'
-Plug 'vim-airline/vim-airline'
+ Plug 'tpope/vim-surround'
+ Plug 'tpope/vim-commentary'
+ Plug 'tpope/vim-dispatch'
+ Plug 'scrooloose/syntastic'
+ Plug 'scrooloose/nerdtree'
+" Plug 'Valloric/YouCompleteMe'
+ Plug 'sirver/ultisnips'
+ Plug 'honza/vim-snippets'
+ Plug 'mattn/emmet-vim'
+ Plug 'python-mode/python-mode'
+ Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
+ Plug 'elzr/vim-json'
+ Plug 'stanangeloff/php.vim'
+ Plug 'vim-scripts/bash-support.vim'
+ Plug 'chrisbra/Colorizer'
+ Plug 'airblade/vim-gitgutter'
+ Plug 'nathanaelkane/vim-indent-guides'
+ Plug 'Yggdroot/indentLine'
+ Plug 'mhinz/vim-startify'
+ Plug 'ayu-theme/ayu-vim'
+ Plug 'Dru89/vim-adventurous'
+ Plug 'abra/vim-obsidian' 
+ Plug 'altercation/vim-colors-solarized'
+ Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
+ " Plug 'vim-scripts/wc.vim--jcline'
+ Plug 'vim-latex/vim-latex'
+ Plug 'vim-airline/vim-airline'
+ if v:version >= 800
+	 Plug 'w0rp/ale'
+ endif
 call plug#end()
-
+endif
 " Airline config variables
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='jellybeans'
@@ -81,7 +89,7 @@ ino <right> <NOP>
 ino <up> <NOP>
 
 " use W to write to a priviledged file
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command! W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 " Make jk work like <Esc>
 inoremap jj <Esc>
@@ -101,7 +109,6 @@ set number relativenumber
 set bg=dark
 colorscheme adventurous
 set cursorline
-set guioptions-=mTrL
 
 " set indent for ansible yaml
 au FileType ansible setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
