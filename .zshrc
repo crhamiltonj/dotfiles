@@ -47,6 +47,11 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# User configuration
+export WORKON_HOME=~/Envs
+export PROJECT_HOME=~/projects
+
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -54,8 +59,6 @@ ZSH_THEME="agnoster"
 plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode virtualenvwrapper web-search )
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

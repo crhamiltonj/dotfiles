@@ -104,11 +104,10 @@ nmap <leader>bl :ls<cr>
 
 " Show the line range except for current line number
 set number relativenumber
-
-
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
 set bg=dark
-colorscheme adventurous
+" colorscheme adventurous
 set cursorline
 
-" set indent for ansible yaml
-au FileType ansible setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
