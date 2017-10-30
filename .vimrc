@@ -43,21 +43,24 @@ Plug 'tpope/vim-fugitive'
  Plug 'mhinz/vim-startify'
  Plug 'ayu-theme/ayu-vim'
  Plug 'Dru89/vim-adventurous'
- Plug 'abra/vim-obsidian' 
+ Plug 'abra/vim-obsidian'
  Plug 'altercation/vim-colors-solarized'
  Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
  " Plug 'vim-scripts/wc.vim--jcline'
  Plug 'vim-latex/vim-latex'
  Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
+ Plug 'edkolev/tmuxline.vim'
+ Plug 'bronson/vim-trailing-whitespace'
  if v:version >= 800
-	 Plug 'w0rp/ale'
+ Plug 'w0rp/ale'
  endif
 call plug#end()
 endif
 " Airline config variables
 let g:airline_powerline_fonts = 1
-" let g:airline_theme='jellybeans'
-" let g:airline_solarized_bg='dark'
+let g:airline_theme='jellybeans'
+let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -111,3 +114,4 @@ set bg=dark
 " colorscheme adventurous
 set cursorline
 
+ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

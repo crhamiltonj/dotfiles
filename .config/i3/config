@@ -125,7 +125,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+f exec "firefox"
 bindsym $mod+Shift+m exec "mplayer"
-bindsym $mod+Shift+t exec "hexchat"
+bindsym $mod+Shift+t exec "lxterminal -e tmux -2"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -164,3 +164,8 @@ bar {
         tray_output primary
 }
 
+
+# bar {
+#     status_command python /usr/share/powerline/bindings/i3/powerline-i3.py
+#     font pango:PowerlineFont 12
+# }
