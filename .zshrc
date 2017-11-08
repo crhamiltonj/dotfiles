@@ -7,7 +7,9 @@ export PYUSERSITE=$(python -m site --user-site)
 if [[ -r $PYUSERSITE/powerline/bindings/zsh/poweline.zsh ]]; then
   source $PYUSERSITE/powerline/bindings/zsh/powerline.zsh
 fi
-$HOME/bin/solarized.sh
+if [[ -r $HOME/bin/solarized.sh ]]; then
+  $HOME/bin/solarized.sh
+fi
 
 if [[ -d $HOME/.fonts ]]; then
   source $HOME/.fonts/*.sh
@@ -27,9 +29,9 @@ export TERM="xterm-256color"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="bureau"
 export DEFAULT_USER=$USER
-export POWERLEVEL9K_MODE='nerdfont-complete'
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv)
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="agnoster"
 
