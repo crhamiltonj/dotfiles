@@ -2,8 +2,10 @@ if [[ -r /usr/bin/powerline-daemon ]]; then
 	powerline-daemon -q
 fi
 
-if [[ -r /Users/crhamiltonj/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/poweline.zsh ]]; then
-	source /usr/share/powerline/bindings/zsh/powerline.zsh
+export PYUSERSITE=$(python -m site --user-site)
+
+if [[ -r $PYUSERSITE/powerline/bindings/zsh/poweline.zsh ]]; then
+  source $PYUSERSITE/powerline/bindings/zsh/powerline.zsh
 fi
 $HOME/bin/solarized.sh
 
@@ -25,8 +27,11 @@ export TERM="xterm-256color"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="bureau"
 export DEFAULT_USER=$USER
-export POWERLEVEL9K_MODE='awesome-fontconfig'
+export POWERLEVEL9K_MODE='nerdfont-complete'
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv)
 ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="agnoster"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -76,7 +81,7 @@ export TERMINAL="/usr/bin/lxterminal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm)
+plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,4 +113,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-source "/home/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+# source "/Users/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
