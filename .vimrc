@@ -25,7 +25,7 @@ Plug 'tpope/vim-fugitive'
  Plug 'tpope/vim-surround'
  Plug 'tpope/vim-commentary'
  Plug 'tpope/vim-dispatch'
- Plug 'scrooloose/syntastic'
+"  Plug 'scrooloose/syntastic'
  Plug 'scrooloose/nerdtree'
 " Plug 'Valloric/YouCompleteMe'
  Plug 'sirver/ultisnips'
@@ -52,6 +52,8 @@ Plug 'tpope/vim-fugitive'
  Plug 'vim-airline/vim-airline-themes'
  Plug 'edkolev/tmuxline.vim'
  Plug 'bronson/vim-trailing-whitespace'
+ Plug 'mattn/emmet-vim'
+ Plug 'nightsense/forgotten'
  if v:version >= 800
  Plug 'w0rp/ale'
  endif
@@ -114,4 +116,5 @@ set bg=dark
 " colorscheme adventurous
 set cursorline
 
+set ts=2 sw=2 sts=2 expandtab
  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
