@@ -5,11 +5,12 @@ fi
 if [[ -r /usr/share/powerline/bindings/zsh/poweline.zsh ]]; then
 	source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
+$HOME/bin/solarized.sh
 
 export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/etcher-cli
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/crhamiltonj/.oh-my-zsh
@@ -18,7 +19,7 @@ export TERM="xterm-256color"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="bureau"
+# ZSH_THEME="spaceship"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
@@ -63,7 +64,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # User configuration
 export WORKON_HOME=~/Envs
 export PROJECT_HOME=~/projects
-
+export TERMINAL="/usr/bin/lxterminal"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -99,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+source "/home/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"

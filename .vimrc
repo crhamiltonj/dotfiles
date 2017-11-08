@@ -112,8 +112,8 @@ set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set bg=dark
-" colorscheme solarized
-colorscheme adventurous
+colorscheme solarized
+" colorscheme adventurous
 set cursorline
 
  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
