@@ -54,6 +54,9 @@ Plug 'tpope/vim-fugitive'
  Plug 'bronson/vim-trailing-whitespace'
  Plug 'mattn/emmet-vim'
  Plug 'nightsense/forgotten'
+ Plug 'pprovost/vim-ps1'
+ Plug 'edouardp/ps1-ultisnips'
+ Plug 'phenomenes/ansible-snippets'
  if v:version >= 800
  Plug 'w0rp/ale'
  endif
@@ -70,15 +73,20 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " Disable YCM tab completion
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+" let g:ycm_key_list_select_completion=[]
+" let g:ycm_key_list_previous_completion=[]
+
+" Utisnips trigger configuration
+let g:UltiSnipsExpandTriger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipEditSplit="vertical"
 
 " change the leader key
 let mapleader = ","

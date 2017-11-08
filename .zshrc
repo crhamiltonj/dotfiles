@@ -6,6 +6,10 @@ if [[ -r /Users/crhamiltonj/Library/Python/2.7/lib/python/site-packages/powerlin
 	source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
 
+if [[ -d $HOME/.fonts ]]; then
+  source $HOME/.fonts/*.sh
+fi
+
 export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
 
 # If you come from bash you might have to change your $PATH.
@@ -20,7 +24,7 @@ export TERM="xterm-256color"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="bureau"
 export DEFAULT_USER=$USER
-
+export POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
