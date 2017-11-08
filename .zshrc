@@ -2,10 +2,14 @@ if [[ -r /usr/bin/powerline-daemon ]]; then
 	powerline-daemon -q
 fi
 
-if [[ -r /usr/share/powerline/bindings/zsh/poweline.zsh ]]; then
+if [[ -r /Users/crhamiltonj/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/poweline.zsh ]]; then
 	source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
 $HOME/bin/solarized.sh
+
+if [[ -d $HOME/.fonts ]]; then
+  source $HOME/.fonts/*.sh
+fi
 
 export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
 
@@ -13,13 +17,15 @@ export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/etcher-cli
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/crhamiltonj/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 export TERM="xterm-256color"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="spaceship"
+# ZSH_THEME="bureau"
+export DEFAULT_USER=$USER
+export POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
@@ -70,7 +76,7 @@ export TERMINAL="/usr/bin/lxterminal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode virtualenvwrapper web-search fbterm)
+plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm)
 
 source $ZSH/oh-my-zsh.sh
 

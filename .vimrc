@@ -25,6 +25,7 @@ Plug 'tpope/vim-fugitive'
  Plug 'tpope/vim-surround'
  Plug 'tpope/vim-commentary'
  Plug 'tpope/vim-dispatch'
+"  Plug 'scrooloose/syntastic'
  Plug 'scrooloose/nerdtree'
 " Plug 'Valloric/YouCompleteMe'
  Plug 'sirver/ultisnips'
@@ -51,9 +52,11 @@ Plug 'tpope/vim-fugitive'
  Plug 'vim-airline/vim-airline-themes'
  Plug 'edkolev/tmuxline.vim'
  Plug 'bronson/vim-trailing-whitespace'
- Plug 'janko-m/vim-test'
- Plug 'benmills/vimux'
- Plug 'lervag/vimtex'
+ Plug 'mattn/emmet-vim'
+ Plug 'nightsense/forgotten'
+ Plug 'pprovost/vim-ps1'
+ Plug 'edouardp/ps1-ultisnips'
+ Plug 'phenomenes/ansible-snippets'
  if v:version >= 800
  Plug 'w0rp/ale'
  endif
@@ -70,15 +73,20 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " Disable YCM tab completion
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+" let g:ycm_key_list_select_completion=[]
+" let g:ycm_key_list_previous_completion=[]
+
+" Utisnips trigger configuration
+let g:UltiSnipsExpandTriger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipEditSplit="vertical"
 
 " change the leader key
 let mapleader = ","
@@ -111,9 +119,10 @@ nmap <leader>bl :ls<cr>
 set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-set bg=dark
 colorscheme solarized
+set bg=dark
 " colorscheme adventurous
 set cursorline
 
+set ts=2 sw=2 sts=2 expandtab
  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

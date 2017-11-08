@@ -1,3 +1,6 @@
 [user]
 	email = crhamiltonj@gmail.com
 	name = Charles Hamilton
+
+[diff]
+	external = git_diff_wrapper
