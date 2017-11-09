@@ -57,6 +57,7 @@ Plug 'tpope/vim-fugitive'
  Plug 'pprovost/vim-ps1'
  Plug 'edouardp/ps1-ultisnips'
  Plug 'phenomenes/ansible-snippets'
+ Plug 'vim-scripts/xoria256.vim'
  if v:version >= 800
  Plug 'w0rp/ale'
  endif
@@ -119,7 +120,8 @@ nmap <leader>bl :ls<cr>
 set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-colorscheme solarized
+" colorscheme solarized
+colorscheme xoria256
 set bg=dark
 " colorscheme adventurous
 set cursorline
