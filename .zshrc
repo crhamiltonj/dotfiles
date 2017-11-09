@@ -77,14 +77,14 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # User configuration
 export WORKON_HOME=~/Envs
 export PROJECT_HOME=~/projects
-export TERMINAL="/usr/bin/lxterminal"
+# export TERMINAL="/usr/bin/lxterminal"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper command-not-found common-aliases pip )
-ZSH_TMUX_AUTOSTART=true
+# ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
