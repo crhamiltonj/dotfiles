@@ -30,8 +30,8 @@ export TERM="xterm-256color"
 # ZSH_THEME="bureau"
 export DEFAULT_USER=$USER
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs dir_writable)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv disk_usage)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="agnoster"
 
@@ -83,7 +83,8 @@ export TERMINAL="/usr/bin/lxterminal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper)
+plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper command-not-found common-aliases pip )
+ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
