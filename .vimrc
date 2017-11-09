@@ -1,5 +1,5 @@
 " download vim-plug if missing
-if empty(glob("~/.vim/autoload/plug.vim"))
+if empty(glob('~/.vim/autoload/plug.vim'))
   silent! execute '!curl -fsSLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter *  silent PlugInstall
 endif
@@ -7,8 +7,12 @@ endif
 " Automatic reloading of .vimrc on save
 autocmd! bufwritepost .vimrc source %
 
+" Set tabstops for all yaml file
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
 " Set laststatus to always show status line
-let laststatus=2
+let g:laststatus=2
 
 " set encoding
 set encoding=utf-8
@@ -21,48 +25,49 @@ filetype plugin indent on
 
 " Plug plugin manager definition
 silent! if plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-fugitive'
- Plug 'tpope/vim-surround'
- Plug 'tpope/vim-commentary'
- Plug 'tpope/vim-dispatch'
-"  Plug 'scrooloose/syntastic'
- Plug 'scrooloose/nerdtree'
-" Plug 'Valloric/YouCompleteMe'
- Plug 'sirver/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'mattn/emmet-vim'
- Plug 'python-mode/python-mode'
- Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
- Plug 'elzr/vim-json'
- Plug 'stanangeloff/php.vim'
- Plug 'vim-scripts/bash-support.vim'
- Plug 'chrisbra/Colorizer'
- Plug 'airblade/vim-gitgutter'
- Plug 'nathanaelkane/vim-indent-guides'
- Plug 'Yggdroot/indentLine'
- Plug 'mhinz/vim-startify'
- Plug 'ayu-theme/ayu-vim'
- Plug 'Dru89/vim-adventurous'
- Plug 'abra/vim-obsidian'
- Plug 'altercation/vim-colors-solarized'
- Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
- " Plug 'vim-scripts/wc.vim--jcline'
- Plug 'vim-latex/vim-latex'
- Plug 'vim-airline/vim-airline'
- Plug 'vim-airline/vim-airline-themes'
- Plug 'edkolev/tmuxline.vim'
- Plug 'bronson/vim-trailing-whitespace'
- Plug 'mattn/emmet-vim'
- Plug 'nightsense/forgotten'
- Plug 'pprovost/vim-ps1'
- Plug 'edouardp/ps1-ultisnips'
- Plug 'phenomenes/ansible-snippets'
- Plug 'vim-scripts/xoria256.vim'
- Plug 'ctrlpvim/ctrlp.vim'
- if v:version >= 800
- Plug 'w0rp/ale'
- endif
-call plug#end()
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-dispatch'
+  Plug 'scrooloose/nerdtree'
+  Plug 'Valloric/YouCompleteMe'
+  Plug 'sirver/ultisnips'
+  Plug 'honza/vim-snippets'
+  Plug 'mattn/emmet-vim'
+  Plug 'python-mode/python-mode'
+  Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
+  Plug 'elzr/vim-json'
+  Plug 'stanangeloff/php.vim'
+  Plug 'vim-scripts/bash-support.vim'
+  Plug 'chrisbra/Colorizer'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'Yggdroot/indentLine'
+  Plug 'mhinz/vim-startify'
+  Plug 'ayu-theme/ayu-vim'
+  Plug 'Dru89/vim-adventurous'
+  Plug 'abra/vim-obsidian'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
+  " Plug 'vim-scripts/wc.vim--jcline'
+  Plug 'vim-latex/vim-latex'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'edkolev/tmuxline.vim'
+  Plug 'bronson/vim-trailing-whitespace'
+  Plug 'mattn/emmet-vim'
+  Plug 'nightsense/forgotten'
+  Plug 'pprovost/vim-ps1'
+  Plug 'edouardp/ps1-ultisnips'
+  Plug 'phenomenes/ansible-snippets'
+  Plug 'vim-scripts/xoria256.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
+  if v:version >= 800
+   Plug 'w0rp/ale'
+  else
+   Plug 'scrooloose/syntastic'
+  endif
+  call plug#end()
 endif
 " Airline config variables
 let g:airline_powerline_fonts = 1
@@ -85,13 +90,13 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " let g:ycm_key_list_previous_completion=[]
 
 " Utisnips trigger configuration
-let g:UltiSnipsExpandTriger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipEditSplit="vertical"
+let g:UltiSnipsExpandTriger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+let g:UltiSnipEditSplit='vertical'
 
 " change the leader key
-let mapleader = ","
+let g:mapleader = ','
 
 " Unmap the arrow keys
 no <down> <NOP>
@@ -122,10 +127,9 @@ set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " colorscheme solarized
-colorscheme xoria256
-set bg=dark
 " colorscheme adventurous
+colorscheme xoria256
+set background=dark
 set cursorline
 
-set ts=2 sw=2 sts=2 expandtab
- autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+set tabstop=2 sw=2 sts=2 expandtab
