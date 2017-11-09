@@ -18,7 +18,7 @@ fi
 export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/etcher-cli
+export PATH=$HOME/.local/bin:/usr/local/bin:$PATH:/opt/etcher-cli
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
