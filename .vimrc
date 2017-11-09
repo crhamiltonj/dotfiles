@@ -58,6 +58,7 @@ Plug 'tpope/vim-fugitive'
  Plug 'edouardp/ps1-ultisnips'
  Plug 'phenomenes/ansible-snippets'
  Plug 'vim-scripts/xoria256.vim'
+ Plug 'ctrlpvim/ctrlp.vim'
  if v:version >= 800
  Plug 'w0rp/ale'
  endif
