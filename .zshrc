@@ -23,17 +23,18 @@ export PATH=$HOME/.local/bin:/usr/local/bin:$PATH:/opt/etcher-cli
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-export TERM="xterm-256color"
+export TERM="screen-256color"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="bureau"
 export DEFAULT_USER=$USER
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv disk_usage)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="agnoster"
+# ZSH_THEME="bureau"
+# ZSH_THEME="robbyrussell"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -83,7 +84,7 @@ export PROJECT_HOME=~/projects
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper command-not-found common-aliases pip )
+plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper command-not-found common-aliases pip knife)
 # ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh

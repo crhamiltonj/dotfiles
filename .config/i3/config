@@ -153,10 +153,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-assign [class="Firefox"] 2
-assign [class="vlc"] 2
-assign [class="HexChat"] 2
-assign [class="Steam"] 2
+assign [class="Firefox"] 1
+assign [class="vlc"] 1
+assign [class="HexChat"] 1
+assign [class="Steam"] 1
 
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Pavucontrol"] floating_maximum_size 290 x 174

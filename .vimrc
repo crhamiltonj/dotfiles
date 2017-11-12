@@ -62,6 +62,9 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'phenomenes/ansible-snippets'
   Plug 'vim-scripts/xoria256.vim'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'godlygeek/tabular'
+  Plug 'plasticboy/vim-markdown'
+  Plug 'vim-pandoc/vim-pandoc'
   if v:version >= 800
    Plug 'w0rp/ale'
   else
@@ -127,8 +130,8 @@ set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " colorscheme solarized
-" colorscheme adventurous
-colorscheme xoria256
+colorscheme adventurous
+" colorscheme xoria256
 set background=dark
 set cursorline
 
