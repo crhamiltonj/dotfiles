@@ -12,7 +12,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 
 " Set laststatus to always show status line
-let g:laststatus=2
+set laststatus=2
+set showtabline=2
+set noshowmode
 
 " set encoding
 set encoding=utf-8
@@ -20,8 +22,7 @@ set encoding=utf-8
 " Set color pallette to 256
 set t_Co=256
 
-" Set filetype plugin loading
-filetype plugin indent on
+
 
 " Plug plugin manager definition
 silent! if plug#begin('~/.vim/plugged')
@@ -65,6 +66,12 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
   Plug 'vim-pandoc/vim-pandoc'
+  Plug 'fs111/pydoc.vim'
+  Plug 'tomasr/molokai'
+  Plug 'crusoexia/vim-monokai'
+  Plug 'tomasiser/vim-code-dark'
+  Plug 'NLKNguyen/papercolor-theme'
+  Plug 'jonathanfilip/lucius'
   if v:version >= 800
    Plug 'w0rp/ale'
   else
@@ -72,6 +79,16 @@ silent! if plug#begin('~/.vim/plugged')
   endif
   call plug#end()
 endif
+
+" Set filetype plugin loading
+filetype plugin indent on
+
+" set configuration for ale
+if v:version >= 800
+  let g:ale_sign_column_always = 1
+  let g:airline#extensions#ale#enabled = 1
+endif
+
 " Airline config variables
 let g:airline_powerline_fonts = 1
 let g:airline_theme='jellybeans'
@@ -93,10 +110,13 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " let g:ycm_key_list_previous_completion=[]
 
 " Utisnips trigger configuration
-let g:UltiSnipsExpandTriger='<tab>'
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsListSnippets='<c-l>'
+let g:UltiSnipsExpandTrigger='<c-x>'
 let g:UltiSnipsJumpForwardTrigger='<c-b>'
 let g:UltiSnipsJumpBackwardTrigger='<c-z>'
-let g:UltiSnipEditSplit='vertical'
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsSnippetDirectories=['UltiSnips']
 
 " change the leader key
 let g:mapleader = ','
@@ -130,7 +150,7 @@ set number relativenumber
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " colorscheme solarized
-colorscheme adventurous
+colorscheme molokai
 " colorscheme xoria256
 set background=dark
 set cursorline
