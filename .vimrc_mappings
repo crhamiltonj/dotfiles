@@ -1,0 +1,28 @@
+
+" change the leader key
+let g:mapleader = ','
+
+" Unmap the arrow keys
+no <down> <NOP>
+no <left> <NOP>
+no <right> <NOP>
+no <up> <NOP>
+ino <down> <NOP>
+ino <left> <NOP>
+ino <right> <NOP>
+ino <up> <NOP>
+
+" use W to write to a priviledged file
+command! W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Make jk work like <Esc>
+inoremap jj <Esc>
+
+" Adjust keymap to support multiple buffers easier
+set hidden
+nmap <leader>T :enew<cr>
+nmap <leader>l :bnext<cr>
+nmap <leader>h :bprevious<cr>
+nmap <leader>bq :bp <BAR> bd #<cr>
+nmap <leader>bl :ls<cr>
+

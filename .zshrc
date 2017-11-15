@@ -84,7 +84,7 @@ export PROJECT_HOME=~/projects
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python archlinux django encode64 docker geeknote taskwarrior tmux tmuxinator vagrant vi-mode web-search fbterm virtualenvwrapper command-not-found common-aliases pip knife)
+plugins=()
 # ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
