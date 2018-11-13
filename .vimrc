@@ -11,4 +11,5 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'pearofducks/ansible-vim'
+Plug 'ekalinin/dockerfile.vim'
 call plug#end()
