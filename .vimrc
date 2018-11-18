@@ -30,6 +30,9 @@ Plug 'godlygeek/tabular'
 Plug 'stephpy/vim-yaml'
 Plug 'mitsuhiko/flask'
 Plug 'm-kat/aws-vim'
+Plug 'alfredodeza/pytest.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 set encoding=utf-8
