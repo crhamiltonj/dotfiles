@@ -35,6 +35,7 @@ Plug 'alfredodeza/pytest.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/syntastic'
+Plug 'vim-scripts/nginx.vim'
 call plug#end()
 
 set encoding=utf-8
