@@ -52,7 +52,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+set number relativenumber
 set undofile
 
 let mapleader = ","
@@ -104,6 +104,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+set spell
 
 let g:airline_powerline_fonts = 1
 
