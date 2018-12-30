@@ -1,5 +1,9 @@
 filetype off
 
+set t_Co=256
+" set t_AB=^[[48;5;%dm
+" set t_AF=^[[38;5;%dm
+
 set nocompatible
 
 set modelines=0
@@ -34,8 +38,10 @@ Plug 'm-kat/aws-vim'
 Plug 'alfredodeza/pytest.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/nginx.vim'
+Plug 'w0rp/ale'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 set encoding=utf-8
@@ -110,10 +116,21 @@ set spell
 let g:airline_powerline_fonts = 1
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+"# let g:syntastic_check_on_wq = 0
+
+" Set font and colorscheme
+set bg=dark
+colorscheme solarized
+
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
+
+set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 12
