@@ -53,6 +53,7 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'jonathanfilip/lucius'
   Plug 'https://github.com/tpope/vim-vividchalk'
   Plug 'https://github.com/morhetz/gruvbox'
+  Plug 'jnurmine/Zenburn'
   Plug 'https://github.com/nanotech/jellybeans.vim'
   if v:version >= 800
    Plug 'w0rp/ale'

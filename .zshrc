@@ -31,7 +31,7 @@ export DEFAULT_USER=$USER
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv disk_usage)
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="bureau"
 # ZSH_THEME="robbyrussell"
@@ -120,3 +120,4 @@ export EDITOR='vim'
 
 
 # source "/Users/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/home/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
