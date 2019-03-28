@@ -67,7 +67,22 @@ SPACESHIP_BATTERY_SHOW="charged"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+<<<<<<< HEAD
 plugins=(git)
+=======
+plugins=(
+  git
+  ssh-agent
+  copyfile
+  docker
+  node
+  npm
+  sublime
+  sudo
+  web-search
+
+)
+>>>>>>> 1aad1cad477fbd06d24c24f378768c1f3cb8bcb8
 
 source $ZSH/oh-my-zsh.sh
 
