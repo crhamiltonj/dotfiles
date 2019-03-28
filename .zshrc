@@ -1,47 +1,31 @@
-if [[ -r /usr/bin/powerline-daemon ]]; then
-	powerline-daemon -q
-fi
-
-export PYUSERSITE=$(python -m site --user-site)
-
-if [[ -r $PYUSERSITE/powerline/bindings/zsh/poweline.zsh ]]; then
-  source $PYUSERSITE/powerline/bindings/zsh/powerline.zsh
-fi
-if [[ -r $HOME/bin/solarized.sh ]]; then
-  $HOME/bin/solarized.sh
-fi
-
-if [[ -d $HOME/.fonts ]]; then
-  source $HOME/.fonts/*.sh
-fi
-
-export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
-
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH:/opt/etcher-cli
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+  export ZSH="/home/crhamiltonj/.oh-my-zsh"
 
-export TERM="screen-256color"
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-export DEFAULT_USER=$USER
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir pyenv ssh vcs dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time battery ssh virtualenv disk_usage)
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-# ZSH_THEME="agnoster"
-# ZSH_THEME="bureau"
 # ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
+SPACESHIP_TIME_SHOW="true"
+SPACESHIP_BATTERY_SHOW="charged"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -69,25 +53,25 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs histor
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# User configuration
-export WORKON_HOME=~/Envs
-export PROJECT_HOME=~/projects
-# export TERMINAL="/usr/bin/lxterminal"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
-# ZSH_TMUX_AUTOSTART=true
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -100,8 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-
-export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -117,7 +99,3 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-# source "/Users/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-source "/home/crhamiltonj/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
