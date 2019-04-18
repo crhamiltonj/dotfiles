@@ -10,10 +10,12 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="bullet-train"
 
-SPACESHIP_TIME_SHOW="true"
-SPACESHIP_BATTERY_SHOW="charged"
+# SPACESHIP_TIME_SHOW="true"
+# SPACESHIP_BATTERY_SHOW="charged"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,10 +74,20 @@ plugins=(
   ssh-agent
   copyfile
   docker
+  docker-compose
   node
   npm
   sublime
   sudo
+  web-search
+  aws
+  django
+  npm
+  node
+  python
+  tmux
+  vagrant
+  common-aliases
   web-search
 
 )
@@ -110,3 +122,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tmux="tmux -2"
+
+export PATH="/home/crhamiltonj/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+

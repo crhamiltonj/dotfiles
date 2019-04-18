@@ -26,6 +26,9 @@ set tabstop=2 sw=2 sts=2 expandtab
 " Set filetype plugin loading
 filetype plugin indent on
 
+" autosave when focus lost
+:au FocusLost * :wa
+
 source ~/.vimrc_plugins
 source ~/.vimrc_ale
 source ~/.vimrc_airline
@@ -33,3 +36,6 @@ source ~/.vimrc_syntastic
 source ~/.vimrc_ycm
 source ~/.vimrc_mappings
 source ~/.vimrc_colorschemes
+source ~/.vimrc_ultisnips
+source ~/.vimrc_ultisnipsconf
+source ~/.vimrc_vimwiki
