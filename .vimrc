@@ -25,6 +25,9 @@ set tabstop=2 sw=2 sts=2 expandtab
 
 " Set filetype plugin loading
 filetype plugin indent on
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType js setlocal ts=2 sts=2 sw=2
+autocmd FileType css setlocal ts=2 sts=2 sw=2
 
 " autosave when focus lost
 :au FocusLost * :wa
@@ -37,5 +40,6 @@ source ~/.vimrc_ycm
 source ~/.vimrc_mappings
 source ~/.vimrc_colorschemes
 source ~/.vimrc_ultisnips
-source ~/.vimrc_ultisnipsconf
+source ~/.vimrc_autosave
+" source ~/.vimrc_ultisnipsconf
 source ~/.vimrc_vimwiki

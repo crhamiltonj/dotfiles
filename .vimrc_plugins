@@ -17,6 +17,8 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'vimwiki/vimwiki'
   Plug 'suan/vim-instant-markdown'
+  Plug 'kien/ctrlp.vim'
+  Plug '907th/vim-auto-save'
 "  Plug 'python-mode/python-mode'
 "  Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
 "  Plug 'elzr/vim-json'
