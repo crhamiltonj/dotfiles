@@ -40,6 +40,6 @@ source ~/.vimrc_ycm
 source ~/.vimrc_mappings
 source ~/.vimrc_colorschemes
 source ~/.vimrc_ultisnips
-source ~/.vimrc_autosave
+" source ~/.vimrc_autosave
 " source ~/.vimrc_ultisnipsconf
 source ~/.vimrc_vimwiki
