@@ -43,3 +43,4 @@ source ~/.vimrc_ultisnips
 " source ~/.vimrc_autosave
 " source ~/.vimrc_ultisnipsconf
 source ~/.vimrc_vimwiki
+source ~/.vimrc_nerdtree
