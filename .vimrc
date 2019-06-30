@@ -32,6 +32,9 @@ autocmd FileType css setlocal ts=2 sts=2 sw=2
 " autosave when focus lost
 :au FocusLost * :wa
 
+"Autosave on buffer switch
+set autowriteall
+
 source ~/.vimrc_plugins
 source ~/.vimrc_ale
 source ~/.vimrc_airline

@@ -20,7 +20,7 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'kien/ctrlp.vim'
   Plug '907th/vim-auto-save'
 "  Plug 'python-mode/python-mode'
-"  Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
+  Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
 "  Plug 'elzr/vim-json'
 "  Plug 'stanangeloff/php.vim'
 "  Plug 'vim-scripts/bash-support.vim'
