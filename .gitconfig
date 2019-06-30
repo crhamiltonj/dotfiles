@@ -3,5 +3,4 @@
 	name = Charles Hamilton
 
 [diff]
-	external = git_diff_wrapper
 	tool = vimdiff
