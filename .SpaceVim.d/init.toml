@@ -60,3 +60,6 @@ name = "tmux"
 
 [[layers]]
 name="fzf"
+
+[[layers]]
+name="lsp"
