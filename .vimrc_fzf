@@ -1,0 +1,18 @@
+set rtp+=~/.fzf
+
+" Search git tracked files
+nmap <Leader>f :GFiles<CR>
+
+" Search all files
+nmap <Leader>F :Files<CR>
+
+" Search open buffers
+nmap <Leader>b :Buffers<CR>
+
+" Search buffer history
+nmap <Leader>h :History <CR>
+
+" Search help tags
+nmap <Leader>H :Helptags!<CR>
+
+

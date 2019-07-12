@@ -48,3 +48,5 @@ source ~/.vimrc_ultisnips
 source ~/.vimrc_vimwiki
 source ~/.vimrc_nerdtree
 source ~/.vimrc_markdown
+source ~/.vimrc_fzf
+

@@ -11,7 +11,8 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'
 "  Plug 'tpope/vim-dispatch'
 "  Plug 'scrooloose/nerdtree'
-  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
   Plug 'Valloric/YouCompleteMe'
   Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
@@ -20,6 +21,7 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'suan/vim-instant-markdown'
   Plug 'kien/ctrlp.vim'
   Plug '907th/vim-auto-save'
+  Plug 'python/black'
 "  Plug 'python-mode/python-mode'
   Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
 "  Plug 'elzr/vim-json'
