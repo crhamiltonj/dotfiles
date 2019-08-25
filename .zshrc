@@ -101,3 +101,15 @@ source $ZSH/oh-my-zsh.sh
 alias pcat='pygmentize -g'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setup virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/Envs
+export PROJECT_HOME=$HOME/projects
+source $HOME/.local/bin/virtualenvwrapper_lazy.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
