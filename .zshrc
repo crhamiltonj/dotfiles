@@ -100,3 +100,9 @@ source $ZSH/oh-my-zsh.sh
 alias pcat='pygmentize -g'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+
+source ~/.local/bin/virtualenvwrapper_lazy.sh
+
+
+fpath=(~/.zsh.d/ $fpath)
