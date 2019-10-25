@@ -9,6 +9,7 @@
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
+# ZSH_THEME="bullet-train"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,9 +101,15 @@ source $ZSH/oh-my-zsh.sh
 alias pcat='pygmentize -g'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
-source ~/.local/bin/virtualenvwrapper_lazy.sh
+# Setup virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/Envs
+export PROJECT_HOME=$HOME/projects
+source $HOME/.local/bin/virtualenvwrapper_lazy.sh
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc'; fi
 
-fpath=(~/.zsh.d/ $fpath)
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
