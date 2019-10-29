@@ -118,5 +118,6 @@ export PATH=$HOME/.poetry/bin:~/.cargo/bin:$PATH
 if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+fpath=(~/.zsh.d/ $fpath)
