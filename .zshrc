@@ -69,7 +69,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl docker node npm aws command-not-found colorize heroku battery themes cp copyfile ssh-agent tugboat web-search)
+plugins=(git kubectl docker node npm aws command-not-found colorize heroku battery themes cp copyfile ssh-agent tugboat web-search poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pcat='pygmentize -g'
+alias kubectl=microk8s.kubectl
+alias k=microk8s.kubectl
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -108,8 +110,13 @@ export WORKON_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/projects
 source $HOME/.local/bin/virtualenvwrapper_lazy.sh
 
+# Update PATH for rust
+export PATH=$HOME/.poetry/bin:~/.cargo/bin:$PATH
+
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/completion.zsh.inc'; fi
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
