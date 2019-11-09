@@ -111,7 +111,7 @@ export PROJECT_HOME=$HOME/projects
 source $HOME/.local/bin/virtualenvwrapper_lazy.sh
 
 # Update PATH for rust
-export PATH=$HOME/.poetry/bin:~/.cargo/bin:$PATH
+export PATH=$HOME/.poetry/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
 
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -121,3 +121,5 @@ if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.
 if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 fpath=(~/.zsh.d/ $fpath)
+export GOPATH=$HOME/gopath
+export PATH=$GOPATH:$GOPATH/bin:$PATH
