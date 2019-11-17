@@ -101,6 +101,12 @@ source $ZSH/oh-my-zsh.sh
 alias pcat='pygmentize -g'
 alias kubectl=microk8s.kubectl
 alias k=microk8s.kubectl
+alias bc='bc -l'
+
+# Functions
+remc() {
+  <<< $1/16 | bc -l
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
