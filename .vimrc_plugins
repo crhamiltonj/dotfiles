@@ -62,6 +62,7 @@ silent! if plug#begin('~/.vim/plugged')
 "  Plug 'https://github.com/tpope/vim-vividchalk'
 "  Plug 'https://github.com/morhetz/gruvbox'
   Plug 'jnurmine/Zenburn'
+  Plug 'morhetz/gruvbox'
 "  Plug 'https://github.com/nanotech/jellybeans.vim'
   if v:version >= 800
    Plug 'w0rp/ale'
