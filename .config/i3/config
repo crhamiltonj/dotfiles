@@ -178,4 +178,6 @@ bar {
 exec_always ~/.screenlayout/firstlayout.sh
 exec blueman-applet
 exec syndaemon -i 2 -d -t -K
+exec synclient TouchpadOff=1
+exec xinput set-prop "Synaptics TM3053-003" "Device Enabled" 0
 # exec jetbrains-toolbox
