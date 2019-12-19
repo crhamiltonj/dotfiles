@@ -1,2 +1,2 @@
-let g:vimwiki_list = [{'path': '~/projects/vimwiki/',
+let g:vimwiki_list = [{'path': '~/projects/refnotes/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]

@@ -29,10 +29,11 @@ autocmd FileType html setlocal ts=2 sts=2 sw=2
 autocmd FileType js setlocal ts=2 sts=2 sw=2
 autocmd FileType css setlocal ts=2 sts=2 sw=2
 
-" autosave when focus lost
-:au FocusLost * :wa
+" Autosave on blur
+augroup AutoWrite
+  autocmd! BufLeave * :update
+augroup END
 
-"Autosave on buffer switch
 set autowriteall
 
 source ~/.vimrc_plugins

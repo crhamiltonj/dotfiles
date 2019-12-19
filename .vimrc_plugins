@@ -25,6 +25,8 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'python/black'
 "  Plug 'python-mode/python-mode'
   Plug 'pearofducks/ansible-vim', {'do': 'cd ./UltiSnips; python2 generate.py' }
+  Plug 'leafgarland/typescript-vim'
+  Plug 'othree/javascript-libraries-syntax.vim'
 "  Plug 'elzr/vim-json'
 "  Plug 'stanangeloff/php.vim'
 "  Plug 'vim-scripts/bash-support.vim'

@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/snap/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/crhamiltonj/.oh-my-zsh"
@@ -8,8 +8,9 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 # ZSH_THEME="bullet-train"
+ZSH_THEME="ys"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,10 +112,6 @@ remc() {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setup virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/Envs
-export PROJECT_HOME=$HOME/projects
-source $HOME/.local/bin/virtualenvwrapper_lazy.sh
 
 # Update PATH for rust
 export PATH=$HOME/.poetry/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
