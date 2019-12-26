@@ -1,16 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/snap/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/crhamiltonj/.oh-my-zsh"
+export ZSH="/home/crhamiltonj/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="spaceship"
-# ZSH_THEME="bullet-train"
-ZSH_THEME="ys"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +69,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl docker node npm aws command-not-found colorize heroku battery themes cp copyfile ssh-agent tugboat web-search poetry)
+plugins=(git common-aliases docker ng npm sudo systemd web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,30 +98,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pcat='pygmentize -g'
-alias kubectl=microk8s.kubectl
-alias k=microk8s.kubectl
-alias bc='bc -l'
-
-# Functions
-remc() {
-  <<< $1/16 | bc -l
-}
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Setup virtualenvwrapper
-
-# Update PATH for rust
-export PATH=$HOME/.poetry/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/iforgot2/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/crhamiltonj/projects/alltheit/source /home/crhamiltonj/projects/alltheit/venv/bin/activate/google-cloud-sdk/completion.zsh.inc'; fi
-function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
-fpath=(~/.zsh.d/ $fpath)
-export GOPATH=$HOME/gopath
-export PATH=$GOPATH:$GOPATH/bin:$PATH
