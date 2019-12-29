@@ -56,6 +56,5 @@ URxvt.iso14755_52: false
 
 
 !FONTS
-URxvt*font: xft:Fira Code:size=14:antialias=true
-URxvt*boldFont: xft:Fira Code:size=14:antialias=true
+URxvt*font: xft:Fira Code:size=11:antialias=true, xft:Deja Vu Sans Mono:size=11
 ! URxvt.letterSpace: -2
