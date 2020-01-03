@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Adding default terminal for i3wm
+export TERMINAL=/usr/bin/termite
 # Path to your oh-my-zsh installation.
 export ZSH="/home/crhamiltonj/.oh-my-zsh"
 
@@ -9,6 +11,7 @@ export ZSH="/home/crhamiltonj/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
 ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
@@ -102,3 +105,5 @@ function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 export FZF_TMUX=1
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
