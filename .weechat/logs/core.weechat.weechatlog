@@ -1,0 +1,134 @@
+2020-01-18 16:04:44		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2020-01-18 16:04:44		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2020-01-18 16:04:44		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2020-01-18 16:04:44		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2020-01-18 16:04:44		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2020-01-18 16:04:44		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2020-01-18 16:04:44		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2020-01-18 16:04:44		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2020-01-18 16:04:44		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2020-01-18 16:04:44		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2020-01-18 16:04:44		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2020-01-18 16:04:44		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2020-01-18 16:04:44		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2020-01-18 16:04:44		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2020-01-18 16:04:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, trigger, xfer
+2020-01-18 16:05:19		[core]
+2020-01-18 16:05:19		  away     eval     mouse    repeat   version
+2020-01-18 16:05:19		  bar      filter   mute     save     wait   
+2020-01-18 16:05:19		  buffer   help     plugin   secure   window 
+2020-01-18 16:05:19		  color    history  print    set    
+2020-01-18 16:05:19		  command  input    proxy    unset  
+2020-01-18 16:05:19		  cursor   key      quit     upgrade
+2020-01-18 16:05:19		  debug    layout   reload   uptime 
+2020-01-18 16:05:19		[lua]
+2020-01-18 16:05:19		  lua
+2020-01-18 16:05:19		[trigger]
+2020-01-18 16:05:19		  trigger
+2020-01-18 16:05:19		[logger]
+2020-01-18 16:05:19		  logger
+2020-01-18 16:05:19		[spell]
+2020-01-18 16:05:19		  spell
+2020-01-18 16:05:19		[fifo]
+2020-01-18 16:05:19		  fifo
+2020-01-18 16:05:19		[irc]
+2020-01-18 16:05:19		  admin       ison        part        squit     
+2020-01-18 16:05:19		  allchan     join        ping        stats     
+2020-01-18 16:05:19		  allpv       kick        pong        summon    
+2020-01-18 16:05:19		  allserv     kickban     query       time      
+2020-01-18 16:05:19		  ban         kill        quiet       topic     
+2020-01-18 16:05:19		  cap         links       quote       trace     
+2020-01-18 16:05:19		  connect     list        reconnect   unban     
+2020-01-18 16:05:19		  ctcp        lusers      rehash      unquiet   
+2020-01-18 16:05:19		  cycle       map         remove      userhost  
+2020-01-18 16:05:19		  dcc         me          restart     users     
+2020-01-18 16:05:19		  dehalfop    mode        sajoin      version   
+2020-01-18 16:05:19		  deop        motd        samode      voice     
+2020-01-18 16:05:19		  devoice     msg         sanick      wallchops 
+2020-01-18 16:05:19		  die         names       sapart      wallops   
+2020-01-18 16:05:19		  disconnect  nick        saquit      who       
+2020-01-18 16:05:19		  halfop      notice      server      whois     
+2020-01-18 16:05:19		  ignore      notify      service     whowas    
+2020-01-18 16:05:19		  info        op          servlist  
+2020-01-18 16:05:19		  invite      oper        squery    
+2020-01-18 16:05:19		[buflist]
+2020-01-18 16:05:19		  buflist
+2020-01-18 16:05:19		[relay]
+2020-01-18 16:05:19		  relay
+2020-01-18 16:05:19		[script]
+2020-01-18 16:05:19		  script
+2020-01-18 16:05:19		[fset]
+2020-01-18 16:05:19		  fset
+2020-01-18 16:05:19		[guile]
+2020-01-18 16:05:19		  guile
+2020-01-18 16:05:19		[charset]
+2020-01-18 16:05:19		  charset
+2020-01-18 16:05:19		[xfer]
+2020-01-18 16:05:19		  me  xfer
+2020-01-18 16:05:19		[exec]
+2020-01-18 16:05:19		  exec
+2020-01-18 16:05:19		[alias]
+2020-01-18 16:05:19		  AAWAY    CL       LEAVE    SAY      WC     
+2020-01-18 16:05:19		  alias    CLOSE    M        SIGNOFF  WI     
+2020-01-18 16:05:19		  ANICK    EXIT     MSGBUF   T        WII    
+2020-01-18 16:05:19		  BEEP     IG       MUB      UB       WM     
+2020-01-18 16:05:19		  BYE      J        N        UMODE    WW     
+2020-01-18 16:05:19		  C        K        Q        V      
+2020-01-18 16:05:19		  CHAT     KB       REDRAW   W      
+2020-01-18 16:05:19		[python]
+2020-01-18 16:05:19		  python
+2020-01-18 16:05:19		[perl]
+2020-01-18 16:05:19		  perl
+2020-01-18 16:05:27		[irc]  /die  [<target>]
+2020-01-18 16:05:27		shutdown the server
+2020-01-18 16:05:27		target: server name
+2020-01-18 16:05:40		[irc]  /nick  [-all] <nick>
+2020-01-18 16:05:40		change current nick
+2020-01-18 16:05:40		-all: set new nick for all connected servers
+2020-01-18 16:05:40		nick: new nick
+2020-01-18 16:06:06		Plugins loaded:
+2020-01-18 16:06:06		  lua: Support of lua scripts
+2020-01-18 16:06:06		  trigger: Text replacement and command execution on events triggered by WeeChat/plugins
+2020-01-18 16:06:06		  logger: Log buffers to files
+2020-01-18 16:06:06		  spell: Spell checker for input
+2020-01-18 16:06:06		  fifo: FIFO pipe for remote control
+2020-01-18 16:06:06		  irc: IRC (Internet Relay Chat) protocol
+2020-01-18 16:06:06		  buflist: Buffers list
+2020-01-18 16:06:06		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2020-01-18 16:06:06		  script: Script manager
+2020-01-18 16:06:06		  fset: Fast set of WeeChat and plugins options
+2020-01-18 16:06:06		  guile: Support of scheme scripts (with Guile)
+2020-01-18 16:06:06		  charset: Charset conversions
+2020-01-18 16:06:06		  xfer: DCC file transfer and direct chat
+2020-01-18 16:06:06		  exec: Execution of external commands in WeeChat
+2020-01-18 16:06:06		  alias: Alias commands
+2020-01-18 16:06:06		  python: Support of python scripts
+2020-01-18 16:06:06		  perl: Support of perl scripts
+2020-01-18 16:07:29		Passphrase added
+2020-01-18 16:07:49		Secured data "freenode_password" set
+2020-01-18 16:07:49		Options saved to sec.conf
+2020-01-18 16:22:37		[python]  /python  list|listfull [<name>]
+2020-01-18 16:22:37		                   load [-q] <filename>
+2020-01-18 16:22:37		                   autoload
+2020-01-18 16:22:37		                   reload|unload [-q] [<name>]
+2020-01-18 16:22:37		                   eval [-o|-oc] <code>
+2020-01-18 16:22:37		                   version
+2020-01-18 16:22:37		list/load/unload scripts
+2020-01-18 16:22:37		    list: list loaded scripts
+2020-01-18 16:22:37		listfull: list loaded scripts (verbose)
+2020-01-18 16:22:37		    load: load a script
+2020-01-18 16:22:37		autoload: load all scripts in "autoload" directory
+2020-01-18 16:22:37		  reload: reload a script (if no name given, unload all scripts, then load all scripts in "autoload" directory)
+2020-01-18 16:22:37		  unload: unload a script (if no name given, unload all scripts)
+2020-01-18 16:22:37		filename: script (file) to load
+2020-01-18 16:22:37		      -q: quiet mode: do not display messages
+2020-01-18 16:22:37		    name: a script name (name used in call to "register" function)
+2020-01-18 16:22:37		    eval: evaluate source code and display result on current buffer
+2020-01-18 16:22:37		      -o: send evaluation result to the buffer without executing commands
+2020-01-18 16:22:37		     -oc: send evaluation result to the buffer and execute commands
+2020-01-18 16:22:37		    code: source code to evaluate
+2020-01-18 16:22:37		 version: display the version of interpreter used
+2020-01-18 16:22:37		Without argument, this command lists all loaded scripts.
+2020-01-18 16:22:49		python scripts loaded:
+2020-01-18 16:22:49		  (none)
+2020-01-18 16:24:06		fifo: pipe closed
