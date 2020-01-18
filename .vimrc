@@ -38,16 +38,16 @@ set autowriteall
 
 source ~/.vimrc_plugins
 source ~/.vimrc_ale
-source ~/.vimrc_airline
-source ~/.vimrc_syntastic
-source ~/.vimrc_ycm
+" source ~/.vimrc_airline
+" source ~/.vimrc_syntastic
+" source ~/.vimrc_ycm
 source ~/.vimrc_mappings
 source ~/.vimrc_colorschemes
-source ~/.vimrc_ultisnips
+" source ~/.vimrc_ultisnips
 " source ~/.vimrc_autosave
 " source ~/.vimrc_ultisnipsconf
 source ~/.vimrc_vimwiki
 source ~/.vimrc_nerdtree
-source ~/.vimrc_markdown
+" source ~/.vimrc_markdown
 source ~/.vimrc_fzf
 
