@@ -36,18 +36,18 @@ augroup END
 
 set autowriteall
 
-source ~/.vimrc_plugins
-source ~/.vimrc_ale
-" source ~/.vimrc_airline
-" source ~/.vimrc_syntastic
-" source ~/.vimrc_ycm
-source ~/.vimrc_mappings
-source ~/.vimrc_colorschemes
-" source ~/.vimrc_ultisnips
-" source ~/.vimrc_autosave
-" source ~/.vimrc_ultisnipsconf
-source ~/.vimrc_vimwiki
-source ~/.vimrc_nerdtree
-" source ~/.vimrc_markdown
-source ~/.vimrc_fzf
+source ~/.vimrc.d/.vimrc_plugins
+source ~/.vimrc.d/.vimrc_ale
+" source ~/.vimrc.d/.vimrc_airline
+" source ~/.vimrc.d/.vimrc_syntastic
+" source ~/.vimrc.d/.vimrc_ycm
+source ~/.vimrc.d/.vimrc_mappings
+source ~/.vimrc.d/.vimrc_colorschemes
+" source ~/.vimrc.d/.vimrc_ultisnips
+" source ~/.vimrc.d/.vimrc_autosave
+" source ~/.vimrc.d/.vimrc_ultisnipsconf
+source ~/.vimrc.d/.vimrc_vimwiki
+source ~/.vimrc.d/.vimrc_nerdtree
+" source ~/.vimrc.d/.vimrc_markdown
+source ~/.vimrc.d/.vimrc_fzf
 
