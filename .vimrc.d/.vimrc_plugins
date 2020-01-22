@@ -65,6 +65,7 @@ silent! if plug#begin('~/.vim/plugged')
   Plug 'https://github.com/nanotech/jellybeans.vim'
   Plug 'wadackel/vim-dogrun'
   Plug 'morhetz/gruvbox'
+  Plug 'mattn/calendar-vim'
 if v:version >= 800
    Plug 'w0rp/ale'
   else

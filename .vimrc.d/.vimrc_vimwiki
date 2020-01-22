@@ -1,1 +1,4 @@
-let g:vimwiki_list = [ {'path': '~/projects/wikis/default'}, {'path': '~/projects/wikis/programming'}, {'path': '~/projects/wikis/devops'}, {'path': '~/projects/vimwiki', 'syntax':'markdown', 'ext': 'md'}, {'path': '~/projects/refnotes','syntax':'markdown', 'ext': 'md'} ]
+let g:vimwiki_list = [
+      \ {'path':'~/projects/vimwiki', 'syntax': 'markdown', 'ext': '.md'},
+      \ {'path':'~/projects/refnotes', 'syntax': 'markdown','ext': '.md'}
+      \]
