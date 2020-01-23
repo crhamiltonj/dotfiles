@@ -8,7 +8,7 @@
 #dynamic_title = true
 font = Monospace 9
 font = Fira Code
-font = iosevka 16
+font = iosevka 14
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
