@@ -19,13 +19,10 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
 Plug 'psf/black'
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-endif
+Plug 'tpope/vim-dadbod'
+Plug 'tmhedberg/SimpylFold'
+Plug 'davidhalter/jedi-vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Needed for vimwiki
@@ -74,7 +71,3 @@ if has ('gui_running')
   set guioptions -=r
 endif
 
-" Deoplete Settings
-let g:deoplete#enable_at_statrtup = 1
-call deoplete#custom#option('sources', {'_': ['ale'],})
-let g:ale_completion_enabled = 1
