@@ -10,7 +10,7 @@ endif
 call plug#begin()
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
+Plug 'machakann/vim-sandwich'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'vimwiki/vimwiki'
@@ -23,6 +23,11 @@ Plug 'tpope/vim-dadbod'
 Plug 'tmhedberg/SimpylFold'
 Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
+if has('nvim') || has('patch-8.0.902')
+    Plug 'mhinz/vim-signify'
+else
+    Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
 call plug#end()
 
 " Needed for vimwiki
@@ -59,7 +64,9 @@ autocmd FileType css setlocal ts=2 sts=2 sw=2
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2
 autocmd FileType yml setlocal ts=2 sts=2 sw=2
 
-" Set colorscheme
+" Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+"Set colorscheme
 colorscheme happy_hacking
 
 " Set font size on GUI
@@ -71,3 +78,5 @@ if has ('gui_running')
   set guioptions -=r
 endif
 
+" Set updatetime for async
+set updatetime=100
