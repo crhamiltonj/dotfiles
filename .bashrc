@@ -2,6 +2,20 @@
 # ~/.bashrc
 #
 
+# Bash completion
+[[ $PS1 && -f /usr/share/bash_completion  ]] && \
+    . /usr/share/bash-completion/bash_completion
+
+# Change default fzf search program 
+#determines search program for fzf
+if type ag &> /dev/null; then
+        export FZF_DEFAULT_COMMAND='ag -p ~/.gitignore -g ""'
+fi
+#refer rg over ag
+if type rg &> /dev/null; then
+        export FZF_DEFAULT_COMMAND='rg --files --hidden'
+fi
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 # Ensure agent is running
