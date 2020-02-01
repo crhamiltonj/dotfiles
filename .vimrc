@@ -8,9 +8,27 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin()
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
+Plug 'ervandew/supertab'
+Plug 'ycm-core/YouCompleteMe'
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+Plug 'SirVer/ultisnips'
+" ultisnips trigger configuration
+let g:UltiSnipsExpandsTrigger = "<tab>"
+let g:UltiSnipsListSnippets = "<c-l>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+Plug 'honza/vim-snippets'
 Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vimwiki/vimwiki'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 
@@ -40,11 +58,13 @@ nnoremap <Down> <C-w>j
 let mapleader = ","
 
 "set colorscheme to blue
-colorscheme blue
+colorscheme gruvbox
 
 " for vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='luna'
+
+
 " jedi-vim setup
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#show_call_signatures = "2"
