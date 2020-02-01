@@ -12,6 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'ervandew/supertab'
+Plug 'vimwiki/vimwiki'
 Plug 'ycm-core/YouCompleteMe'
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -27,8 +28,10 @@ Plug 'honza/vim-snippets'
 Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vimwiki/vimwiki'
 Plug 'morhetz/gruvbox'
+Plug 'luochen1990/rainbow'
+let g:rainbow_active=1
+Plug 'prettier/vim-prettier',{'do': 'yarn install'}
 call plug#end()
 
 
