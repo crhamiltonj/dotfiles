@@ -57,8 +57,10 @@ nnoremap <Down> <C-w>j
 " Set leader to ,
 let mapleader = ","
 
-"set colorscheme to blue
+"set colorscheme to blue and background to dark
 colorscheme gruvbox
+set background=dark
+
 
 " for vim-airline
 let g:airline_powerline_fonts = 1
