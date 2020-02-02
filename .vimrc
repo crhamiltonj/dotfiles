@@ -12,8 +12,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'ervandew/supertab'
-Plug 'vimwiki/vimwiki'
 Plug 'ycm-core/YouCompleteMe'
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -26,6 +27,8 @@ let g:UltiSnipsListSnippets = "<c-l>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 Plug 'honza/vim-snippets'
+Plug 'mlaursen/vim-react-snippets'
+Plug 'mattn/emmet-vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -33,6 +36,8 @@ Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active=1
 Plug 'prettier/vim-prettier',{'do': 'yarn install'}
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 Plug 'psf/black'
 Plug 'preservim/nerdtree'
 Plug 'chrisbra/Colorizer'
@@ -84,7 +89,13 @@ autocmd BufWritePre *.py execute ':Black'
 " Format Python files on demand
 nnoremap <F9> :Black<CR>
 
+" Toggle NERDTree
+nnoremap <F7> :NERDTreeToggle<CR>
+
 " For colorizer highlighting
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" Set default tabs
+set sts=2 ts=2 sw=2 noexpandtab
