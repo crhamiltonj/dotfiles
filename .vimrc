@@ -8,6 +8,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin()
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
@@ -32,6 +33,9 @@ Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active=1
 Plug 'prettier/vim-prettier',{'do': 'yarn install'}
+Plug 'psf/black'
+Plug 'preservim/nerdtree'
+Plug 'chrisbra/Colorizer'
 call plug#end()
 
 
@@ -73,3 +77,14 @@ let g:airline_theme='luna'
 " jedi-vim setup
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#show_call_signatures = "2"
+
+" Format Python files on save
+autocmd BufWritePre *.py execute ':Black'
+
+" Format Python files on demand
+nnoremap <F9> :Black<CR>
+
+" For colorizer highlighting
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
