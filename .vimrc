@@ -33,13 +33,14 @@ Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active=1
 Plug 'prettier/vim-prettier',{'do': 'yarn install'}
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 Plug 'psf/black'
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 Plug 'chrisbra/Colorizer'
 call plug#end()
 
@@ -90,7 +91,7 @@ autocmd BufWritePre *.py execute ':Black'
 nnoremap <F9> :Black<CR>
 
 " Toggle NERDTree
-nnoremap <F7> :NERDTreeToggle<CR>
+nnoremap <F5> :e.<CR>
 
 " For colorizer highlighting
 set termguicolors
@@ -99,3 +100,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " Set default tabs
 set sts=2 ts=2 sw=2 noexpandtab
+
+" Autosave when focus lost ingnore untitled buffers
+:au FocusLost * silent! wa
