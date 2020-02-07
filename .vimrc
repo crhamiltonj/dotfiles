@@ -42,6 +42,8 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 Plug 'psf/black'
 " Plug 'preservim/nerdtree'
 Plug 'chrisbra/Colorizer'
+Plug 'junegunn/fzf', {'do': './install --bin'}
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
@@ -71,7 +73,7 @@ nnoremap <Down> <C-w>j
 let mapleader = ","
 
 "set colorscheme to blue and background to dark
-colorscheme gruvbox
+colorscheme PaperColor
 set background=dark
 
 
