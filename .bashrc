@@ -46,6 +46,10 @@ if [ "$?" == 1  ]; then
 fi
 
 alias ls='ls --color=auto'
+alias ll='ls --color=auto -l'
+alias la='ls --color=auto -a'
+alias lla='ls --color=auto -la'
+
 PS1='[\u@\h \W]\$ '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
@@ -65,4 +69,9 @@ if [[ -z "$TMUX"  ]]; then
   fi
 fi
 function gi() { curl -sL https://www.gitignore.io/api/$@ ;}
-eval "$(starship init bash)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# eval "$(starship init bash)"

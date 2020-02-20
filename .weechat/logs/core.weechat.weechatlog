@@ -1,0 +1,234 @@
+2020-01-17 01:21:13		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2020-01-17 01:21:13		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2020-01-17 01:21:13		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2020-01-17 01:21:13		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2020-01-17 01:21:13		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2020-01-17 01:21:13		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2020-01-17 01:21:13		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2020-01-17 01:21:13		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2020-01-17 01:21:13		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2020-01-17 01:21:13		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2020-01-17 01:21:13		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2020-01-17 01:21:13		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2020-01-17 01:21:13		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2020-01-17 01:21:13		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2020-01-17 01:21:13		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-01-17 01:21:28		[core]
+2020-01-17 01:21:28		  away     debug    key      proxy    set      window 
+2020-01-17 01:21:28		  bar      eval     layout   quit     unset  
+2020-01-17 01:21:28		  buffer   filter   mouse    reload   upgrade
+2020-01-17 01:21:28		  color    help     mute     repeat   uptime 
+2020-01-17 01:21:28		  command  history  plugin   save     version
+2020-01-17 01:21:28		  cursor   input    print    secure   wait   
+2020-01-17 01:21:28		[perl]
+2020-01-17 01:21:28		  perl
+2020-01-17 01:21:28		[ruby]
+2020-01-17 01:21:28		  ruby
+2020-01-17 01:21:28		[exec]
+2020-01-17 01:21:28		  exec
+2020-01-17 01:21:28		[tcl]
+2020-01-17 01:21:28		  tcl
+2020-01-17 01:21:28		[logger]
+2020-01-17 01:21:28		  logger
+2020-01-17 01:21:28		[spell]
+2020-01-17 01:21:28		  spell
+2020-01-17 01:21:28		[script]
+2020-01-17 01:21:28		  script
+2020-01-17 01:21:28		[fifo]
+2020-01-17 01:21:28		  fifo
+2020-01-17 01:21:28		[lua]
+2020-01-17 01:21:28		  lua
+2020-01-17 01:21:28		[python]
+2020-01-17 01:21:28		  python
+2020-01-17 01:21:28		[xfer]
+2020-01-17 01:21:28		  me  xfer
+2020-01-17 01:21:28		[buflist]
+2020-01-17 01:21:28		  buflist
+2020-01-17 01:21:28		[relay]
+2020-01-17 01:21:28		  relay
+2020-01-17 01:21:28		[irc]
+2020-01-17 01:21:28		  admin       ison        part        squit     
+2020-01-17 01:21:28		  allchan     join        ping        stats     
+2020-01-17 01:21:28		  allpv       kick        pong        summon    
+2020-01-17 01:21:28		  allserv     kickban     query       time      
+2020-01-17 01:21:28		  ban         kill        quiet       topic     
+2020-01-17 01:21:28		  cap         links       quote       trace     
+2020-01-17 01:21:28		  connect     list        reconnect   unban     
+2020-01-17 01:21:28		  ctcp        lusers      rehash      unquiet   
+2020-01-17 01:21:28		  cycle       map         remove      userhost  
+2020-01-17 01:21:28		  dcc         me          restart     users     
+2020-01-17 01:21:28		  dehalfop    mode        sajoin      version   
+2020-01-17 01:21:28		  deop        motd        samode      voice     
+2020-01-17 01:21:28		  devoice     msg         sanick      wallchops 
+2020-01-17 01:21:28		  die         names       sapart      wallops   
+2020-01-17 01:21:28		  disconnect  nick        saquit      who       
+2020-01-17 01:21:28		  halfop      notice      server      whois     
+2020-01-17 01:21:28		  ignore      notify      service     whowas    
+2020-01-17 01:21:28		  info        op          servlist  
+2020-01-17 01:21:28		  invite      oper        squery    
+2020-01-17 01:21:28		[trigger]
+2020-01-17 01:21:28		  trigger
+2020-01-17 01:21:28		[fset]
+2020-01-17 01:21:28		  fset
+2020-01-17 01:21:28		[guile]
+2020-01-17 01:21:28		  guile
+2020-01-17 01:21:28		[charset]
+2020-01-17 01:21:28		  charset
+2020-01-17 01:21:28		[alias]
+2020-01-17 01:21:28		  AAWAY    CHAT     K        N        UB       WII    
+2020-01-17 01:21:28		  alias    CL       KB       Q        UMODE    WM     
+2020-01-17 01:21:28		  ANICK    CLOSE    LEAVE    REDRAW   V        WW     
+2020-01-17 01:21:28		  BEEP     EXIT     M        SAY      W      
+2020-01-17 01:21:28		  BYE      IG       MSGBUF   SIGNOFF  WC     
+2020-01-17 01:21:28		  C        J        MUB      T        WI     
+2020-01-17 01:21:45		[irc]  /info  [<target>]
+2020-01-17 01:21:45		get information describing the server
+2020-01-17 01:21:45		target: server name
+2020-01-17 01:23:47		fifo: pipe closed
+2020-01-18 16:33:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-01-18 16:33:56		fifo: pipe closed
+2020-01-18 16:35:26		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-01-18 16:35:55		Buffers list:
+2020-01-18 16:35:55		  [1] core.weechat (notify: all)
+2020-01-18 16:36:06		fifo: pipe closed
+2020-01-18 16:36:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-01-18 23:59:41		fifo: pipe closed
+2020-01-21 09:47:57		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-01-21 09:50:59		fifo: pipe closed
+2020-02-15 03:22:33		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-02-15 03:36:32	=!=	irc: command "nick" must be executed on irc buffer (server, channel or private)
+2020-02-15 03:36:42		[core]
+2020-02-15 03:36:42		  away     command  filter   key      plugin   reload   set      version
+2020-02-15 03:36:42		  bar      cursor   help     layout   print    repeat   unset    wait   
+2020-02-15 03:36:42		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2020-02-15 03:36:42		  color    eval     input    mute     quit     secure   uptime 
+2020-02-15 03:36:42		[perl]
+2020-02-15 03:36:42		  perl
+2020-02-15 03:36:42		[ruby]
+2020-02-15 03:36:42		  ruby
+2020-02-15 03:36:42		[exec]
+2020-02-15 03:36:42		  exec
+2020-02-15 03:36:42		[tcl]
+2020-02-15 03:36:42		  tcl
+2020-02-15 03:36:42		[logger]
+2020-02-15 03:36:42		  logger
+2020-02-15 03:36:42		[spell]
+2020-02-15 03:36:42		  spell
+2020-02-15 03:36:42		[script]
+2020-02-15 03:36:42		  script
+2020-02-15 03:36:42		[fifo]
+2020-02-15 03:36:42		  fifo
+2020-02-15 03:36:42		[lua]
+2020-02-15 03:36:42		  lua
+2020-02-15 03:36:42		[python]
+2020-02-15 03:36:42		  python
+2020-02-15 03:36:42		[xfer]
+2020-02-15 03:36:42		  me  xfer
+2020-02-15 03:36:42		[buflist]
+2020-02-15 03:36:42		  buflist
+2020-02-15 03:36:42		[relay]
+2020-02-15 03:36:42		  relay
+2020-02-15 03:36:42		[irc]
+2020-02-15 03:36:42		  admin       die         lusers      ping        saquit      userhost  
+2020-02-15 03:36:42		  allchan     disconnect  map         pong        server      users     
+2020-02-15 03:36:42		  allpv       halfop      me          query       service     version   
+2020-02-15 03:36:42		  allserv     ignore      mode        quiet       servlist    voice     
+2020-02-15 03:36:42		  ban         info        motd        quote       squery      wallchops 
+2020-02-15 03:36:42		  cap         invite      msg         reconnect   squit       wallops   
+2020-02-15 03:36:42		  connect     ison        names       rehash      stats       who       
+2020-02-15 03:36:42		  ctcp        join        nick        remove      summon      whois     
+2020-02-15 03:36:42		  cycle       kick        notice      restart     time        whowas    
+2020-02-15 03:36:42		  dcc         kickban     notify      sajoin      topic     
+2020-02-15 03:36:42		  dehalfop    kill        op          samode      trace     
+2020-02-15 03:36:42		  deop        links       oper        sanick      unban     
+2020-02-15 03:36:42		  devoice     list        part        sapart      unquiet   
+2020-02-15 03:36:42		[trigger]
+2020-02-15 03:36:42		  trigger
+2020-02-15 03:36:42		[fset]
+2020-02-15 03:36:42		  fset
+2020-02-15 03:36:42		[guile]
+2020-02-15 03:36:42		  guile
+2020-02-15 03:36:42		[charset]
+2020-02-15 03:36:42		  charset
+2020-02-15 03:36:42		[alias]
+2020-02-15 03:36:42		  AAWAY    C        IG       M        REDRAW   UMODE    WII    
+2020-02-15 03:36:42		  alias    CHAT     J        MSGBUF   SAY      V        WM     
+2020-02-15 03:36:42		  ANICK    CL       K        MUB      SIGNOFF  W        WW     
+2020-02-15 03:36:42		  BEEP     CLOSE    KB       N        T        WC     
+2020-02-15 03:36:42		  BYE      EXIT     LEAVE    Q        UB       WI     
+2020-02-15 03:39:28		Plugins loaded:
+2020-02-15 03:39:28		  perl: Support of perl scripts
+2020-02-15 03:39:28		  ruby: Support of ruby scripts
+2020-02-15 03:39:28		  exec: Execution of external commands in WeeChat
+2020-02-15 03:39:28		  tcl: Support of tcl scripts
+2020-02-15 03:39:28		  logger: Log buffers to files
+2020-02-15 03:39:28		  spell: Spell checker for input
+2020-02-15 03:39:28		  script: Script manager
+2020-02-15 03:39:28		  fifo: FIFO pipe for remote control
+2020-02-15 03:39:28		  lua: Support of lua scripts
+2020-02-15 03:39:28		  python: Support of python scripts
+2020-02-15 03:39:28		  xfer: DCC file transfer and direct chat
+2020-02-15 03:39:28		  buflist: Buffers list
+2020-02-15 03:39:28		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2020-02-15 03:39:28		  irc: IRC (Internet Relay Chat) protocol
+2020-02-15 03:39:28		  trigger: Text replacement and command execution on events triggered by WeeChat/plugins
+2020-02-15 03:39:28		  fset: Fast set of WeeChat and plugins options
+2020-02-15 03:39:28		  guile: Support of scheme scripts (with Guile)
+2020-02-15 03:39:28		  charset: Charset conversions
+2020-02-15 03:39:28		  alias: Alias commands
+2020-02-15 03:41:07		Windows list:
+2020-02-15 03:41:07		[1] (10:0;96x40) 
+2020-02-15 03:41:13		Buffers list:
+2020-02-15 03:41:13		  [1] core.weechat (notify: all)
+2020-02-15 03:41:13		  [2] fset.fset (notify: all)
+2020-02-15 03:42:29		irc: server freenode added
+2020-02-15 03:42:36		[irc]  /server  list|listfull [<name>]
+2020-02-15 03:42:36		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2020-02-15 03:42:36		                copy|rename <name> <new_name>
+2020-02-15 03:42:36		                reorder <name> [<name>...]
+2020-02-15 03:42:36		                open <name>|-all [<name>...]
+2020-02-15 03:42:36		                del|keep <name>
+2020-02-15 03:42:36		                deloutq|jump
+2020-02-15 03:42:36		                raw [<filter>]
+2020-02-15 03:42:36		list, add or remove IRC servers
+2020-02-15 03:42:36		    list: list servers (without argument, this list is displayed)
+2020-02-15 03:42:36		listfull: list servers with detailed info for each server
+2020-02-15 03:42:36		     add: add a new server
+2020-02-15 03:42:36		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2020-02-15 03:42:36		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2020-02-15 03:42:36		   -temp: add a temporary server (not saved)
+2020-02-15 03:42:36		  option: set option for server (for boolean option, value can be omitted)
+2020-02-15 03:42:36		nooption: set boolean option to 'off' (for example: -nossl)
+2020-02-15 03:42:36		    copy: duplicate a server
+2020-02-15 03:42:36		  rename: rename a server
+2020-02-15 03:42:36		 reorder: reorder list of servers
+2020-02-15 03:42:36		    open: open the server buffer without connecting
+2020-02-15 03:42:36		    keep: keep server in config file (for temporary servers only)
+2020-02-15 03:42:36		     del: delete a server
+2020-02-15 03:42:36		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2020-02-15 03:42:36		    jump: jump to server buffer
+2020-02-15 03:42:36		     raw: open buffer with raw IRC data
+2020-02-15 03:42:36		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2020-02-15 03:42:36		            *       show all messages (no filter)
+2020-02-15 03:42:36		            xxx     show only messages containing "xxx"
+2020-02-15 03:42:36		            s:xxx   show only messages for server "xxx"
+2020-02-15 03:42:36		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2020-02-15 03:42:36		            m:xxx   show only IRC command "xxx"
+2020-02-15 03:42:36		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2020-02-15 03:42:36		Examples:
+2020-02-15 03:42:36		  /server listfull
+2020-02-15 03:42:36		  /server add freenode chat.freenode.net
+2020-02-15 03:42:36		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2020-02-15 03:42:36		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2020-02-15 03:42:36		  /server copy freenode freenode-test
+2020-02-15 03:42:36		  /server rename freenode-test freenode2
+2020-02-15 03:42:36		  /server reorder freenode2 freenode
+2020-02-15 03:42:36		  /server del freenode
+2020-02-15 03:42:36		  /server deloutq
+2020-02-15 03:42:36		  /server raw
+2020-02-15 03:42:36		  /server raw s:freenode
+2020-02-15 03:42:36		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2020-02-15 03:44:07		[server] (irc.conf)
+2020-02-15 03:44:07		  irc.server.freenode.username = null -> "crhamiltonj"
+2020-02-15 03:44:07		1 option (matching with "irc.server.freenode.username")
+2020-02-15 03:46:59		fifo: pipe closed
