@@ -45,11 +45,13 @@ if [ "$?" == 1  ]; then
       ssh-add -t 4h
 fi
 
-alias ls='ls --color=auto'
-alias ll='ls --color=auto -l'
-alias la='ls --color=auto -a'
-alias lla='ls --color=auto -la'
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -a'
+alias lla='exa -la'
 
+alias dfa='df -T -h'
+alias dfs='df -T -x devtmpfs -x tmpfs -x squashfs -h'
 PS1='[\u@\h \W]\$ '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
