@@ -52,6 +52,8 @@ alias lla='exa -la'
 
 alias dfa='df -T -h'
 alias dfs='df -T -x devtmpfs -x tmpfs -x squashfs -h'
+
+alias fuck='sudo '
 PS1='[\u@\h \W]\$ '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

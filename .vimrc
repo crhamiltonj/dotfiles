@@ -25,8 +25,8 @@ Plug 'SirVer/ultisnips'
 " ultisnips trigger configuration
 let g:UltiSnipsExpandsTrigger = "<tab>"
 let g:UltiSnipsListSnippets = "<c-l>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'mattn/emmet-vim'
@@ -50,7 +50,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
 Plug 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
-nnoremap <space> za
+nnoremap <space>+ za
+Plug 'janko/vim-test'
 call plug#end()
 
 
@@ -70,11 +71,21 @@ set t_Co=256
 " Set jj to end insert mode
 inoremap jj <ESC>
 
-" Map arrow keys to window movement keys
-nnoremap <Left> <C-w>h
-nnoremap <Right> <C-w>l
-nnoremap <Up> <C-w>k
-nnoremap <Down> <C-w>j
+" Map CTRL-dir keys for Windows Movement
+nnoremap <C-H> <C-w>h
+nnoremap <C-L> <C-w>l
+nnoremap <C-K> <C-w>k
+nnoremap <C-J> <C-w>j
+
+inoremap <C-H> <C-w>h
+inoremap <C-L> <C-w>l
+inoremap <C-K> <C-w>k
+inoremap <C-J> <C-w>j
+
+vnoremap <C-H> <C-w>h
+vnoremap <C-L> <C-w>l
+vnoremap <C-K> <C-w>k
+vnoremap <C-J> <C-w>j
 
 " Set leader to ,
 let mapleader = ","
@@ -105,5 +116,12 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "set colorscheme to blue and background to dark
 colorscheme PaperColor
 set background=dark
+
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> <leader>n :TestNearest<CR>
+nmap <silent> <leader>f :TestFile<CR>
+nmap <silent> <leader>s :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>v :TestVisit<CR>
 
 autocmd BufEnter *.html set ai sw=2 ts=2 sta et fo=croql
