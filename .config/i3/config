@@ -184,7 +184,7 @@ bar {
 	tray_output 	primary
 	
 }
-exec_always xss-lock -- i3lock -n -i ~/Downloads/space.jpg && echo mem > /sys/power/state
+# exec_always xss-lock -- i3lock -n -i ~/Downloads/space.jpg && echo mem > /sys/power/state
 exec_always flameshot
 exec_always powerkit
 # exec_always netctl-tray

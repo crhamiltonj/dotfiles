@@ -124,4 +124,7 @@ nmap <silent> <leader>s :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>v :TestVisit<CR>
 
+" Disable folding
+set nofoldenable
+
 autocmd BufEnter *.html set ai sw=2 ts=2 sta et fo=croql
