@@ -47,6 +47,10 @@ Plug 'junegunn/fzf', {'do': './install --bin'}
 Plug 'junegunn/fzf.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'vimwiki/vimwiki'
+let g:vimwiki_list = [{'path': '~/wikis'},
+			\ {'path': '~/tech_wikis'}]
+" Plug 'lervag/wiki.vim'
+" let g:wiki_root = '~/wiki'
 Plug 'rust-lang/rust.vim'
 Plug 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
