@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias l="exa"
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
 
 export FZF_TMUX=1
