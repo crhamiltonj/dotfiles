@@ -123,8 +123,11 @@ nmap <silent> <leader>f :TestFile<CR>
 nmap <silent> <leader>s :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>v :TestVisit<CR>
+nmap <silent> <leader>t :!pytest<CR>
 
 " Disable folding
 set nofoldenable
 
+" Set max col length to 80
+set colorcolumn=80
 autocmd BufEnter *.html set ai sw=2 ts=2 sta et fo=croql
